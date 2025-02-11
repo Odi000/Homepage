@@ -7,17 +7,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Playfair Display", "Roboto", serif;
+    font-family: "Roboto", serif;
 }
 
 :root {
     font-size: 10px;
     --main-bkg-clr: #0891B2;
+    --p-text-clr: #565656;
+    --first: #7C75CA;
+    --standart-shadow: 
+    4px 4px 8px #0000003f,
+    4px 4px 16px #0000001e,
+    -4px 4px 16px #0000001e;
 }
 
 header {
     position: relative;
     padding-top: 28px;
+    margin-bottom: 32px;
 }
 
 .background {
@@ -35,10 +42,17 @@ header {
     color: white;
 }
 
-.portrait h1 {
-    position: absolute;
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display";
     font-weight: 400;
 }
+
+.portrait h1 {
+    position: absolute;
+}
+
 
 footer {
     background-color: var(--main-bkg-clr);
@@ -55,14 +69,95 @@ footer {
 
     .portrait img {
         width: 100%;
+        box-shadow: var(--standart-shadow)
     }
 
     .portrait h1 {
-        bottom: 0;
+        bottom: 2px;
         left: 10px;
         font-size: 86px;
-        text-shadow: 2px 2px 4px #0000003f,
-        -2px -2px 4px #0000003f;
+        text-shadow:
+            2px 2px 4px #0000003f,
+            -2px -2px 4px #0000003f;
+    }
+
+    main {
+        padding: 0 26px;
+    }
+
+    main h2 {
+        font-size: 56px;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .about-me p {
+        font-size: 26px;
+        line-height: 40px;
+        color: var(--p-text-clr);
+    }
+
+    nav {
+        margin: 16px auto 120px;
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+    }
+
+    nav img {
+        width: 42px;
+    }
+
+    /*For x.com icon to not appear bigger*/
+    nav a:last-child {
+        display: grid;
+        place-items: center;
+    }
+
+    nav a:last-child img {
+        width: 38px;
+    }
+
+    .my-work h2{
+        margin-bottom: 28px;
+    }
+
+    .container>div {
+        box-shadow: var(--standart-shadow);
+    }
+
+    .screenshot {
+        background-color: var(--first);
+        color: white;
+        padding: 80px 40px;
+    }
+
+    .container h3 {
+        font-size: 28px;
+        margin-left: 16px;
+        margin-bottom: 18px;
+    }
+
+    .container p {
+        font-size: 20px;
+        color: var(--p-text-clr);
+    }
+
+    .container>div>div:last-child {
+        position: relative;
+        padding: 16px 28px 90px;
+        margin-bottom: 85px;
+    }
+
+    .container img {
+        width: 30px;
+        position: absolute;
+        right: 65px;
+        top: 23px;
+    }
+
+    .container img:last-child {
+        right: 20px;
     }
 }
 
