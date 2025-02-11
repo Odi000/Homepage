@@ -1,16 +1,73 @@
 /*Universal*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", "Roboto", serif;
+}
+
+:root {
+    font-size: 10px;
+    --main-bkg-clr: #0891B2;
+}
+
+header {
+    position: relative;
+    padding-top: 28px;
+}
+
+.background {
+    background-color: var(--main-bkg-clr);
+    clip-path: polygon(0% 92%, 0% 0%, 100% 0%, 100% 65%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.portrait {
+    position: relative;
+    color: white;
+}
+
+.portrait h1 {
+    position: absolute;
+    font-weight: 400;
+}
+
+footer {
+    background-color: var(--main-bkg-clr);
+    height: 25%;
+}
 
 /*Mobile*/
 
-@media (max-width: 600) {
+@media (max-width: 600px) {
+    .portrait {
+        width: 85vw;
+        margin: 0 auto;
+    }
 
+    .portrait img {
+        width: 100%;
+    }
+
+    .portrait h1 {
+        bottom: 0;
+        left: 10px;
+        font-size: 86px;
+        text-shadow: 2px 2px 4px #0000003f,
+        -2px -2px 4px #0000003f;
+    }
 }
 
 /*Tablet*/
 
-@media (max-width: 1000) {
-
-}
+@media (max-width: 1000px) {}
 
 /*Desctop...*/
