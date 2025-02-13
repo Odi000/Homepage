@@ -1,8 +1,12 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
@@ -161,7 +165,10 @@
         </nav>
       </div>
       <div class="img-container">
-        <img src="./Images&Icons/footer-pic.jpg" alt="working" />
+        <picture>
+          <source srcset="./Images&Icons/footer-pic-desktop.jpg" media="(min-width: 1000px)">
+          <img src="./Images&Icons/footer-pic.jpg" alt="working" />
+        </picture>
       </div>
     </footer>
   </body>
