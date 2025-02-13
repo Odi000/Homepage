@@ -269,27 +269,29 @@ footer {
     }
 
     .background {
-        height: 360px;
+        height: 400px;
         clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 62%);
     }
-    
+
     .portrait {
         margin: 0 auto;
-        max-width: 850px;
+        max-width: 1000px;
     }
 
     .portrait img {
-        width: 280px;
+        width: 320px;
         margin-right: 18px;
     }
 
     .portrait h1 {
-        top: 254px;
-        left: 7px;
+        top: 298px;
+        left: 28px;
     }
 
     main {
-        padding-top: 20px;
+        padding: 38px 0 0;
+        max-width: 1000px;
+        margin: 0 auto;
     }
 
     .about-me {
@@ -303,17 +305,38 @@ footer {
     }
 
     .about-me p {
+        font-size: 16px;
         line-height: 22px;
     }
 
     .about-me nav {
-        margin-top: 14px;
+        margin-top: 40px;
         display: flex;
         justify-content: right;
     }
 
     .about-me nav img {
         width: 30px;
+    }
+
+    .my-work {
+        padding: 110px 130px;
+    }
+
+    footer {
+        gap: 50px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .img-container {
+        line-height: 0;
+    }
+
+    .img-container img {
+        width: 380px;
     }
 }
 
